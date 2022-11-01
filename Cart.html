@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script
+    src="https://www.paypal.com/sdk/js?client-id=AbDeZDRwQQfJH5gkz7nqq6Vh-SriuGehZbU-GcQ88hrXeELhzdY57qBnqdpD-Ky3MWZ9XvZrs1fEu00h"></script>
+    <script src="./Script/Cart.js"></script>
+    <script src="./Script/paypal.js"></script>
+    <script src="./Script/CookieLib.js"></script>
+    <link rel="stylesheet" href="./Style/bootstrap.min.css">
+    <link rel="stylesheet" href="./Style/Style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">E-Commerce App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kids</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div></div>
+    <br><br><br><br>
+    
+    <div class="Cart">
+        <h1>Cart</h1>
+        <h1 style="color: #FEC354;">-------------</h1>
+        <br>
+        <br>
+
+        <div class="priceDiv">
+
+          <h1 id="totalpriceh" > total  price is :  </h1>
+          <h1  id="totalprice"> </h1>
+          <label style="font-size: 30;" id="totallable">total  price after sale is : </label>
+          <input style="font-size: 20;" id="totalpricAfterSale" value="00.0" readonly >
+          <h1  id="successOperation"></h1>
+          <br> 
+            <button id="sal50" onclick="sale50()">Sale 50% </button>
+            <button id="towOne" onclick="buytowgetone()" > buy tow pices get one or three get tow  </button>
+            <div id="paypal-button-container"></div>
+          <br><br><br><br><br>
+        </div>
+        <div id="CartProducts">
+            <!-- <div class="row" style="padding-left: 20%; padding-right: 20%;width: 100%;">
+                <div class="col-md-3">
+                    <img src="Resources/Registration_Background.jpg" width="60%">
+                </div>
+                <div class="col-md-8 align-self-center">
+                    <h4>this is product title</h4>
+                    <br>
+                    <p class="card-subtitle text-muted">price</p>
+                </div>
+                <div class="col-md-1 align-self-center">
+                    <input type="number" style="width:100%">
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="Footer row">
+        <div class="col-md-6">
+            <h4>E-Commerce</h4>
+            <span>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </span>
+        </div>
+        <div class="col-md-2">
+            <h4>PRODUCTS</h4>
+            <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h4>USEFUL LINKS</h4>
+            <ul>
+                <li>Prices</li>
+                <li>Order</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <h4>CONTACT</h4>
+            <ul>
+                <li>Address</li>
+                <li>Phone</li>
+                <li>Email</li>
+            </ul>
+        </div>
+    </div>
+    <h5>Copy Rights</h5>
+    <script
+    src="https://www.paypal.com/sdk/js?client-id=AbDeZDRwQQfJH5gkz7nqq6Vh-SriuGehZbU-GcQ88hrXeELhzdY57qBnqdpD-Ky3MWZ9XvZrs1fEu00h"></script>
+    <script src="./Script/Cart.js"></script>
+    <script src="./Script/CookieLib.js"></script>
+    <script src="./Script/paypal.js"></script>
+</body>
+</html>
